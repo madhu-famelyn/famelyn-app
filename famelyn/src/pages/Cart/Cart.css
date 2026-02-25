@@ -1,18 +1,21 @@
 .cart-page {
   min-height: 100vh;
-  padding: 40px;
+  padding: 60px 40px;
   background: linear-gradient(135deg, #4b3cef, #6a5af9);
-  color: #333;
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
 
+/* Title */
 .checkout-title {
   text-align: center;
-  color: white;
-  margin-bottom: 40px;
-  font-size: 40px;
-  font-weight: 600;
+  margin-bottom: 50px;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
+/* Layout */
 .checkout-container {
   display: flex;
   gap: 40px;
@@ -21,109 +24,170 @@
   flex-wrap: wrap;
 }
 
-/* LEFT */
+/* LEFT - Order Summary */
 .order-summary {
-  background: #f5f5f5;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
   width: 450px;
-  padding: 30px;
-  border-radius: 20px;
+  padding: 35px;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  color: white;
 }
 
 .order-summary h2 {
-  margin-bottom: 20px;
-  color: #4b3cef;
+  margin-bottom: 25px;
+  font-weight: 600;
 }
 
 .summary-item {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.summary-item p {
+  font-weight: 500;
 }
 
 .remove-btn {
   background: none;
   border: none;
-  color: red;
+  color: #ff6b6b;
   cursor: pointer;
   font-size: 13px;
+  margin-top: 5px;
 }
 
 .summary-line,
 .summary-total {
   display: flex;
   justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 20px;
   font-weight: 500;
 }
 
 .summary-total {
   font-size: 20px;
-  color: #4b3cef;
-  font-weight: 600;
+  font-weight: 700;
+  margin-top: 25px;
 }
 
 .empty {
   text-align: center;
-  color: gray;
+  opacity: 0.8;
 }
 
-/* RIGHT */
+/* RIGHT - Payment */
 .payment-section {
-  background: #f5f5f5;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
   width: 500px;
-  padding: 30px;
-  border-radius: 20px;
+  padding: 35px;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  color: white;
 }
 
 .payment-section h2 {
   margin-bottom: 20px;
-  color: #4b3cef;
+  font-weight: 600;
 }
 
+/* Customer Info */
+.customer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.customer-form input {
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Payment Options */
 .payment-options {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   margin-bottom: 25px;
+  flex-wrap: wrap;
 }
 
 .pay-option {
-  padding: 10px 15px;
-  border-radius: 20px;
+  padding: 10px 18px;
+  border-radius: 25px;
   border: none;
   cursor: pointer;
-  background: #ddd;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.pay-option:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .pay-option.active {
-  background: linear-gradient(135deg, #4b3cef, #6a5af9);
-  color: white;
+  background: white;
+  color: #4b3cef;
+  font-weight: 600;
 }
 
+/* Payment Form */
 .payment-form input,
 .payment-form select {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   margin-bottom: 15px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 14px;
 }
 
 .row {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
+/* Pay Button */
 .pay-button {
   width: 100%;
-  padding: 15px;
+  padding: 16px;
   border-radius: 30px;
   border: none;
-  background: linear-gradient(135deg, #4b3cef, #6a5af9);
-  color: white;
+  background: white;
+  color: #4b3cef;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 15px;
+  transition: 0.3s ease;
+}
+
+.pay-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .checkout-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .order-summary,
+  .payment-section {
+    width: 100%;
+    max-width: 600px;
+  }
 }

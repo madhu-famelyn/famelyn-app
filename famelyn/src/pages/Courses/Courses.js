@@ -1,6 +1,6 @@
 import React from "react";
 import "./Courses.css";
-import { FaStar, FaShoppingCart } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import coursesData from "../../Data/coursesData";
 import Header from "../Header/header";

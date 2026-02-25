@@ -10,6 +10,13 @@ function Cart() {
   const [cartItems, setCartItems] = useState([]);
   const [paymentMethod, setPaymentMethod] = useState("card");
 
+  // ✅ New State for Customer Info
+  const [customerInfo, setCustomerInfo] = useState({
+    name: "",
+    email: "",
+    phone: "",
+  });
+
   useEffect(() => {
     loadCart();
   }, []);
@@ -96,6 +103,47 @@ function Cart() {
 
           {/* RIGHT - Payment */}
           <div className="payment-section">
+            <h2>Customer Information</h2>
+
+            {/* ✅ New Customer Fields */}
+            <div className="customer-form">
+              <input
+                type="text"
+                placeholder="Full Name"
+                value={customerInfo.name}
+                onChange={(e) =>
+                  setCustomerInfo({
+                    ...customerInfo,
+                    name: e.target.value,
+                  })
+                }
+              />
+
+              <input
+                type="email"
+                placeholder="Email Address"
+                value={customerInfo.email}
+                onChange={(e) =>
+                  setCustomerInfo({
+                    ...customerInfo,
+                    email: e.target.value,
+                  })
+                }
+              />
+
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                value={customerInfo.phone}
+                onChange={(e) =>
+                  setCustomerInfo({
+                    ...customerInfo,
+                    phone: e.target.value,
+                  })
+                }
+              />
+            </div>
+
             <h2>Payment Method</h2>
 
             <div className="payment-options">
@@ -127,7 +175,6 @@ function Cart() {
               </button>
             </div>
 
-            {/* Dynamic Inputs */}
             <div className="payment-form">
               {paymentMethod === "card" && (
                 <>
