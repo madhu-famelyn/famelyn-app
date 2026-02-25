@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Courses from "./pages/Courses/Courses";
 import CourseDetails from "./pages/Details/Details";
 import Cart from "./pages/Cart/Cart";
+import OrdersTable from "./pages/Dashboard/Dashboard";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
         <Route path="/" element={<Courses />} />
         <Route path="/course/:id" element={<CourseDetails />} />
         <Route path="/cart" element={<Cart/>} />
-      </Routes>
+        <Route path="/dashboad" element={<OrdersTable/>}/>
+            </Routes>
     </Router>
   );
 }

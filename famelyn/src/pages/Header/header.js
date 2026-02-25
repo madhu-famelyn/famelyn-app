@@ -35,7 +35,7 @@ function Header() {
         onClick={() => navigate("/")}
         style={{ cursor: "pointer" }}
       >
-        CourseHub
+        Famelyn
       </h2>
 
       <div

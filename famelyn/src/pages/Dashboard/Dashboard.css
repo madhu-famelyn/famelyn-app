@@ -1,0 +1,287 @@
+/* ============================= */
+/* PAGE BACKGROUND */
+/* ============================= */
+
+.orders-container {
+  min-height: 100vh;
+  padding: 40px 60px;
+  background: linear-gradient(135deg, #4b3cef, #6a5af9);
+  font-family: "Inter", sans-serif;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.orders-header h1 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.orders-header p {
+  font-size: 15px;
+  opacity: 0.85;
+}
+
+/* ============================= */
+/* SORT DROPDOWN */
+/* ============================= */
+
+.sort-container {
+  display: flex;
+  align-items: center;
+}
+
+.sort-dropdown {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+  background: rgb(255 255 255 / 92%);
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.2s ease;
+}
+
+.sort-dropdown:hover {
+  transform: translateY(-1px);
+}
+
+/* ============================= */
+/* TABLE CONTAINER */
+/* ============================= */
+
+.table-container {
+  background: #f3f4f6;
+  border-radius: 20px;
+  padding: 25px;
+  overflow-x: auto;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* ============================= */
+/* TABLE */
+/* ============================= */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+
+  /* 🔥 Important */
+  table-layout: fixed;
+}
+
+/* ===== COLUMN WIDTH CONTROL ===== */
+/* Adjust these values as needed */
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 140px; /* Order ID */
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 170px; /* Customer */
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 220px; /* Email */
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+  width: 160px; /* Phone */
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+  width: 300px; /* 🔥 Courses (WIDER) */
+}
+
+th:nth-child(6),
+td:nth-child(6) {
+  width: 130px; /* Subtotal */
+}
+
+th:nth-child(7),
+td:nth-child(7) {
+  width: 80px; /* GST % */
+}
+
+th:nth-child(8),
+td:nth-child(8) {
+  width: 130px; /* GST Amount */
+}
+
+th:nth-child(9),
+td:nth-child(9) {
+  width: 150px; /* Total */
+}
+
+th:nth-child(10),
+td:nth-child(10) {
+  width: 120px; /* Payment */
+}
+
+th:nth-child(11),
+td:nth-child(11) {
+  width: 120px; /* Status */
+}
+
+th:nth-child(12),
+td:nth-child(12) {
+  width: 180px; /* Created */
+}
+
+/* ============================= */
+/* TABLE HEAD */
+/* ============================= */
+
+thead {
+  background: #f1f5f9;
+}
+
+th {
+  text-align: left;
+  padding: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+/* ============================= */
+/* TABLE BODY */
+/* ============================= */
+
+td {
+  padding: 18px 16px;
+  font-size: 14px;
+  color: #374151;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: top;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background: #f9fafb;
+  transition: 0.2s ease;
+}
+
+/* ============================= */
+/* PREVENT TEXT SQUEEZE */
+/* ============================= */
+
+td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ============================= */
+/* TOTAL COLUMN */
+/* ============================= */
+
+.total-amount {
+  font-weight: 700;
+  font-size: 15px;
+  color: #111827;
+}
+
+/* ============================= */
+/* COURSE LIST */
+/* ============================= */
+
+td div {
+  font-size: 13px;
+  margin-bottom: 4px;
+  white-space: normal; /* allow wrapping inside courses */
+  word-break: break-word;
+  
+}
+
+/* ============================= */
+/* BADGES */
+/* ============================= */
+
+.badge {
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* PAYMENT STATUS */
+
+.payment-success {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.payment-not_paid {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.payment-failed {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* ORDER STATUS */
+
+.status-paid {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.status-pending {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.status-failed {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.status-cancelled {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 1200px) {
+  .orders-container {
+    padding: 30px;
+  }
+
+  th,
+  td {
+    font-size: 12px;
+    padding: 12px;
+  }
+}
