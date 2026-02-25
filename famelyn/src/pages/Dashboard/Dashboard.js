@@ -72,7 +72,6 @@ const OrdersPage = () => {
         <table>
           <thead>
             <tr>
-              <th>Order ID</th>
               <th>Customer</th>
               <th>Email</th>
               <th>Phone</th>
@@ -90,7 +89,6 @@ const OrdersPage = () => {
           <tbody>
             {sortedOrders.map((order) => (
               <tr key={order.id}>
-                <td>{order.order_id}</td>
                 <td>{order.customer_name}</td>
                 <td>{order.customer_email}</td>
                 <td>{order.customer_phone}</td>
