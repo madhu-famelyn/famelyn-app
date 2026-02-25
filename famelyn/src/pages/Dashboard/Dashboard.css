@@ -5,7 +5,7 @@
 .orders-container {
   min-height: 100vh;
   padding: 40px 60px;
-  background: linear-gradient(135deg, #4b3cef, #6a5af9);
+  background: #4b3cef;
   font-family: "Inter", sans-serif;
 }
 
@@ -215,7 +215,7 @@ td div {
   margin-bottom: 4px;
   white-space: normal; /* allow wrapping inside courses */
   word-break: break-word;
-  
+
 }
 
 /* ============================= */
