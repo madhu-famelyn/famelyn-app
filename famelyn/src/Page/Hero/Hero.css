@@ -1,0 +1,97 @@
+.hero-fixed {
+  width: 100%;
+  background-color: #e7e2dd; /* light beige background */
+  padding: 20px 20px;
+  box-sizing: border-box;
+}
+
+.hero-container {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+/* LEFT SIDE */
+.hero-left-hero {
+  flex: 1;
+}
+
+.hero-title {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #4b2e2b; /* dark brown */
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 30px;
+}
+
+.hero-description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #5e5854;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.primary-btn {
+  background-color: #5a2d24;
+  color: #ffffff;
+  border: none;
+  padding: 16px 36px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #3f1f19;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 2px solid #5a2d24;
+  color: #5a2d24;
+  padding: 14px 34px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background-color: #5a2d24;
+  color: #ffffff;
+}
+
+/* RIGHT SIDE IMAGE */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-wrapper {
+  background-color: #f1ece7;
+  padding: 10px;
+  border-radius: 35px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 30px;
+  display: block;
+}

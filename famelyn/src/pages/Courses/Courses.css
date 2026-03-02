@@ -7,8 +7,8 @@
 
 .app {
   min-height: 100vh;
-  background: #4b3cef;
-  color: white;
+  background:#e7e2dd;
+  color:#3c2520;
   padding-bottom: 50px;
 }
 
@@ -35,7 +35,7 @@
   top: -10px;
   right: -10px;
   background: white;
-  color: #4b3cef;
+  color: #3c2520;
   font-size: 12px;
   font-weight: bold;
   padding: 3px 7px;
@@ -95,7 +95,7 @@
 }
 
 .card-content h3 {
-  color: #4b3cef;
+  color: #3c2520;
   font-size: 20px;
   margin-bottom: 8px;
 }
@@ -133,13 +133,13 @@
 }
 
 .card-footer h4 {
-  color: #4b3cef;
+  color: #3c2520;
   font-size: 18px;
   font-weight: 600;
 }
 
 .details-btn {
-  background: #4b3cef;
+  background: #3c2520;
   color: white;
   border: none;
   padding: 8px 16px;
@@ -149,7 +149,7 @@
 }
 
 .details-btn:hover {
-  background: #372bbf;
+  background: #3c2520;
 }
 
 /* Responsive */

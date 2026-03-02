@@ -1,0 +1,253 @@
+.events {
+  width: 100%;
+  background-color: #e7e2dd;
+  padding: 100px 80px;
+  box-sizing: border-box;
+}
+
+.events-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.events-title {
+  text-align: center;
+  font-size: 48px;
+  font-family: 'Poppins', sans-serif;
+  color: #4b2e2b;
+  margin-bottom: 60px;
+}
+
+/* EVENT CARD */
+.event-card {
+  background-color: #f0ebe6;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* IMAGE */
+.event-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+/* CONTENT */
+.event-content {
+  padding: 40px 50px 50px;
+}
+
+.event-name {
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  color: #4b2e2b;
+  margin-bottom: 15px;
+}
+
+.event-description {
+  font-size: 18px;
+  color: #5e5854;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.event-meta {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+  color: #6b625d;
+  margin-bottom: 30px;
+}
+
+/* BUTTON */
+.event-btn {
+  background-color: #5a2d24;
+  color: #ffffff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.event-btn:hover {
+  background-color: #3f1f19;
+}
+
+.event-meta {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #6b625d;
+}
+
+.meta-icon {
+  color: #5a2d24;
+  font-size: 16px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Large Screens */
+@media (max-width: 1400px) {
+  .events {
+    padding: 90px 60px;
+  }
+
+  .event-image img {
+    height: 380px;
+  }
+}
+
+
+/* Laptops */
+@media (max-width: 1200px) {
+  .events-title {
+    font-size: 40px;
+  }
+
+  .event-image img {
+    height: 350px;
+  }
+
+  .event-content {
+    padding: 35px 40px 45px;
+  }
+}
+
+
+/* Tablets */
+@media (max-width: 992px) {
+  .events {
+    padding: 80px 40px;
+  }
+
+  .events-title {
+    font-size: 34px;
+    margin-bottom: 50px;
+  }
+
+  .event-name {
+    font-size: 26px;
+  }
+
+  .event-description {
+    font-size: 16px;
+  }
+
+  .event-meta {
+    gap: 20px;
+    font-size: 15px;
+    flex-wrap: wrap;
+  }
+
+  .event-image img {
+    height: 320px;
+  }
+}
+
+
+/* Large Mobile */
+@media (max-width: 768px) {
+  .events {
+    padding: 70px 25px;
+  }
+
+  .events-title {
+    font-size: 28px;
+  }
+
+  .event-content {
+    padding: 30px 25px 35px;
+  }
+
+  .event-name {
+    font-size: 22px;
+  }
+
+  .event-description {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .event-meta {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .event-image img {
+    height: 280px;
+  }
+
+  .event-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* Small Mobile */
+@media (max-width: 576px) {
+  .events {
+    padding: 60px 20px;
+  }
+
+  .events-title {
+    font-size: 24px;
+  }
+
+  .event-name {
+    font-size: 20px;
+  }
+
+  .event-description {
+    font-size: 14px;
+  }
+
+  .event-image img {
+    height: 220px;
+  }
+
+  .meta-item {
+    font-size: 14px;
+  }
+
+  .event-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+
+/* Extra Small Devices */
+@media (max-width: 400px) {
+  .events-title {
+    font-size: 20px;
+  }
+
+  .event-name {
+    font-size: 18px;
+  }
+
+  .event-image img {
+    height: 190px;
+  }
+
+  .event-content {
+    padding: 25px 18px 30px;
+  }
+}

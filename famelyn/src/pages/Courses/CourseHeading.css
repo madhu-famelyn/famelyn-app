@@ -1,0 +1,59 @@
+.courses {
+  width: 100%;
+  background-color: #e7e2dd; /* same soft beige */
+  padding: 100px 0;
+  box-sizing: border-box;
+}
+
+.courses-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.courses-title {
+  font-size: 32px;
+ font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #4b2e2b;
+  margin-bottom: 70px;
+}
+
+/* STATS GRID */
+.stats-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.stat-card {
+  background-color: #dcd6d1;
+  width: 120px;
+  height: 80px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+}
+
+/* NUMBER */
+.stat-value {
+  font-size: 21px;
+  font-weight: 700;
+  color: #4b2e2b;
+  margin-bottom: 10px;
+}
+
+/* LABEL */
+.stat-label {
+  font-size: 18px;
+  color: #6b625d;
+}

@@ -1,0 +1,590 @@
+.books {
+  width: 100%;
+  background-color: #e7e2dd;
+  padding: 100px 80px;
+  box-sizing: border-box;
+}
+
+.books-container {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.books-title {
+  text-align: center;
+  font-size: 34px;
+ font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #4b2e2b;
+  margin-bottom: 80px;
+}
+
+/* GRID */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+/* CARD */
+.book-card {
+  background-color: #f0ebe6;
+  padding: 0px;
+  border-radius: 30px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-8px);
+}
+
+/* IMAGE */
+.book-image-wrapper {
+  background-color: #eadcc8;
+  padding: 0px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  overflow: hidden; /* important */
+}
+
+.book-image-wrapper img {
+  width: 100%;
+  height: 500px;        /* ↓ reduce height here */
+  object-fit: cover;    /* keeps image nicely cropped */
+  border-radius: 20px;
+  display: block;
+}
+.info-wrapper{
+    padding: 20px;
+}
+/* TEXT */
+.book-name {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  color: #4b2e2b;
+  margin-bottom: 15px;
+}
+
+.book-description {
+  font-size: 12px;
+  color: #5e5854;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+.book-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Primary Button */
+.primary-btn {
+  background-color: #5a2d24;
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;     /* smaller but balanced */
+  border-radius: 20px;   /* slightly reduced */
+  font-size: 14px;       /* reduced text size */
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #3f1f19;
+}
+
+/* Secondary Button */
+.secondary-btn {
+  background: transparent;
+  border: 1.5px solid #5a2d24;  /* slightly thinner */
+  color: #5a2d24;
+  padding: 7px 16px;           /* smaller */
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background-color: #5a2d24;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   COMPACT MODAL STYLES
+========================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(60, 40, 30, 0.25);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeIn 0.25s ease;
+}
+
+.modal-box {
+  background: #f4f1ee;
+  width: 90%;
+  max-width: 400px; /* reduced */
+  border-radius: 22px; /* reduced */
+  padding: 35px 30px; /* reduced */
+  position: relative;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+  animation: scaleIn 0.25s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Close Button */
+
+.modal-close {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 16px; /* smaller */
+  cursor: pointer;
+  color: #8c8179;
+  transition: 0.2s ease;
+}
+
+.modal-close:hover {
+  color: #3b2a24;
+}
+
+/* Title */
+
+.modal-title {
+  font-size: 22px; /* reduced */
+  font-weight: 600;
+  color: #4b342c;
+  margin-bottom: 22px;
+  text-align: left;
+}
+
+/* Form */
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px; /* reduced spacing */
+}
+
+.modal-form input {
+  padding: 12px 18px; /* reduced */
+  border-radius: 40px;
+  border: 1px solid #d6ccc6;
+  background: transparent;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.25s ease;
+  color: #4b342c;
+  font-family: "Poppins", sans-serif;
+}
+
+.modal-form input::placeholder {
+  color: #a79a93;
+  font-size: 13px;
+}
+
+.modal-form input:focus {
+  border-color: #6b3e2e;
+  box-shadow: 0 0 0 2px rgba(107, 62, 46, 0.08);
+}
+
+/* Submit Button */
+
+.submit-btn {
+  margin-top: 8px;
+  background: #6b3e2e;
+  color: #ffffff;
+  padding: 13px;
+  border-radius: 40px;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.submit-btn:hover {
+  background: #5a3326;
+}
+
+/* Success State */
+
+.success-box {
+  text-align: center;
+  padding: 10px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.success-icon {
+  width: 50px; /* smaller */
+  height: 50px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin: 0 auto 12px auto;
+  font-weight: 600;
+}
+
+.success-box h3 {
+  font-size: 18px;
+  color: #4b342c;
+  margin-bottom: 6px;
+}
+
+.success-box p {
+  font-size: 13px;
+  color: #7b6f69;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+/* =========================
+   EVENT MODAL STYLES
+========================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(60, 40, 30, 0.25);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeIn 0.25s ease;
+}
+
+.modal-box {
+  background: #f4f1ee;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 22px;
+  padding: 35px 30px;
+  position: relative;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+  animation: scaleIn 0.25s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.modal-close {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #8c8179;
+  transition: 0.2s ease;
+}
+
+.modal-close:hover {
+  color: #3b2a24;
+}
+
+.modal-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #4b342c;
+  margin-bottom: 22px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.modal-form input {
+  padding: 12px 18px;
+  border-radius: 40px;
+  border: 1px solid #d6ccc6;
+  background: transparent;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.25s ease;
+  color: #4b342c;
+  font-family: "Poppins", sans-serif;
+}
+
+.modal-form input::placeholder {
+  color: #a79a93;
+  font-size: 13px;
+}
+
+.modal-form input:focus {
+  border-color: #6b3e2e;
+  box-shadow: 0 0 0 2px rgba(107, 62, 46, 0.08);
+}
+
+.submit-btn {
+  margin-top: 8px;
+  background: #6b3e2e;
+  color: #ffffff;
+  padding: 13px;
+  border-radius: 40px;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.submit-btn:hover {
+  background: #5a3326;
+}
+
+/* Success State */
+
+.success-box {
+  text-align: center;
+  padding: 10px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.success-icon {
+  width: 50px;
+  height: 50px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin: 0 auto 12px auto;
+  font-weight: 600;
+}
+
+.success-box h3 {
+  font-size: 18px;
+  color: #4b342c;
+  margin-bottom: 6px;
+}
+
+.success-box p {
+  font-size: 13px;
+  color: #7b6f69;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Large Screens (1400px and below) */
+@media (max-width: 1400px) {
+  .books {
+    padding: 90px 60px;
+  }
+
+  .books-grid {
+    gap: 40px;
+  }
+
+  .book-image-wrapper img {
+    height: 450px;
+  }
+}
+
+
+/* Laptops */
+@media (max-width: 1200px) {
+  .books-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .book-image-wrapper img {
+    height: 420px;
+  }
+}
+
+
+/* Tablets */
+@media (max-width: 992px) {
+  .books {
+    padding: 80px 40px;
+  }
+
+  .books-title {
+    font-size: 28px;
+    margin-bottom: 60px;
+  }
+
+  .books-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .book-image-wrapper img {
+    height: 380px;
+  }
+}
+
+
+/* Large Mobile */
+@media (max-width: 768px) {
+  .books {
+    padding: 70px 25px;
+  }
+
+  .books-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .book-card {
+    border-radius: 22px;
+  }
+
+  .book-image-wrapper img {
+    height: 420px;
+  }
+
+  .book-buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .modal-box {
+    padding: 30px 25px;
+  }
+}
+
+
+/* Small Mobile */
+@media (max-width: 576px) {
+  .books {
+    padding: 60px 20px;
+  }
+
+  .books-title {
+    font-size: 24px;
+  }
+
+  .book-name {
+    font-size: 16px;
+  }
+
+  .book-description {
+    font-size: 13px;
+  }
+
+  .book-image-wrapper img {
+    height: 320px;
+  }
+
+  .book-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .modal-box {
+    max-width: 95%;
+    padding: 25px 20px;
+  }
+
+  .modal-title {
+    font-size: 18px;
+  }
+
+  .modal-form input {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  .submit-btn {
+    padding: 12px;
+    font-size: 13px;
+  }
+}
+
+
+/* Extra Small Devices */
+@media (max-width: 400px) {
+  .book-image-wrapper img {
+    height: 280px;
+  }
+
+  .books-title {
+    font-size: 20px;
+  }
+
+  .modal-box {
+    padding: 20px 18px;
+  }
+}

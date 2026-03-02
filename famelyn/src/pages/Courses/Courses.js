@@ -3,8 +3,7 @@ import "./Courses.css";
 import { FaStar } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import coursesData from "../../Data/coursesData";
-import Header from "../Header/header";
-
+import CoursesHeading from "./CourseHeading";
 function Courses() {
   const navigate = useNavigate();
 
@@ -12,12 +11,8 @@ function Courses() {
     <>
    
     <div className="app">
-      <Header/>
       {/* Hero Section */}
-      <div className="hero">
-        <h1>Explore Our Courses</h1>
-        <p>Level up your skills with expert-led video courses</p>
-      </div>
+     <CoursesHeading/>
 
       {/* Course Grid */}
       <div className="course-container">

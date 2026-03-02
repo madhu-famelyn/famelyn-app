@@ -1,0 +1,80 @@
+/* Section */
+.stats-section {
+  padding: 100px 20px;
+  background: #f6f1ed;
+}
+
+/* Container */
+.stats-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* Card */
+.stats-card {
+  background: #f3ece7;
+  border-radius: 28px;
+  padding: 12px 12px;
+  text-align: center;
+  border: 1px solid #e3d7d0;
+  transition: all 0.3s ease;
+}
+
+.stats-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(91, 45, 39, 0.12);
+}
+
+/* Icon */
+.stats-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 25px;
+  border-radius: 20px;
+  background: rgba(146, 74, 60, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats-icon {
+  color: #924a3c;
+}
+
+/* Value */
+.stats-value {
+  font-family: 'Poppins', sans-serif;
+  font-size: 52px;
+  margin: 0 0 10px;
+  color: #2e1a17;
+}
+
+/* Label */
+.stats-label {
+  font-size: 18px;
+  color: #7a6560;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .stats-card {
+    padding: 40px 20px;
+  }
+
+  .stats-value {
+    font-size: 40px;
+  }
+}

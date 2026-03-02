@@ -1,0 +1,71 @@
+/* Section Background */
+.community-section {
+  width: 100%;
+  min-height: 60vh;
+  background-color: #d9d2cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Container */
+.community-container {
+  max-width: 850px;
+  text-align: center;
+}
+
+/* Dots */
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.dots span {
+  width: 8px;
+  height: 8px;
+  background-color: #b9afa9;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dots .active {
+  background-color: #7b4a3c;
+}
+
+/* Heading */
+.community-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 38px;   /* reduced from 52px */
+  font-weight: 600;
+  color: #4b2e2a;
+  margin-bottom: 18px;
+}
+
+/* Description */
+.community-description {
+  font-size: 16px;   /* reduced from 20px */
+  color: #5e5a57;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+/* Button */
+.community-btn {
+  background-color: #6b3d32;
+  color: white;
+  border: none;
+  padding: 14px 36px;   /* slightly smaller */
+  font-size: 15px;      /* reduced from 18px */
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.community-btn:hover {
+  background-color: #5a3228;
+  transform: translateY(-2px);
+}

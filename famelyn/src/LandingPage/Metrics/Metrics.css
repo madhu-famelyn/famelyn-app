@@ -1,0 +1,160 @@
+/* =========================
+   SECTION
+========================= */
+
+
+
+.metrics-section {
+  padding: 22px 20px;
+  background: linear-gradient(135deg, rgb(87, 55, 50), rgb(146, 88, 73));
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.metrics-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.metrics-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.metrics-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 999px;
+  background: hsla(0, 0%, 100%, 0.12);
+  margin-bottom: 18px;
+  color:rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.metrics-header h2 {
+  font-size: 38px;
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+
+.metrics-header p {
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.85;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.metric-card {
+  background: hsla(0, 0%, 100%, 0.08);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 32px;
+  border: 1px solid hsla(0, 0%, 100%, 0.15);
+  box-shadow: rgb(79, 41, 41);
+  transition: all 0.3s ease;
+}
+
+.metric-card:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-6px);
+  background: hsla(0, 0%, 100%, 0.14);
+}
+
+/* =========================
+   ICON
+========================= */
+
+.metric-icon {
+  margin-bottom: 18px;
+  color:rgb(255 255 255 / var(--tw-text-opacity, 1));
+  opacity: 0.9;
+}
+
+/* =========================
+   VALUE
+========================= */
+
+.metric-value {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 6px;
+ font-family: 'Poppins', sans-serif;
+}
+
+/* =========================
+   CHANGE BADGE
+========================= */
+
+.metric-change {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: hsla(0, 0%, 100%, 0.18);
+  margin-bottom: 14px;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.metric-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.metric-desc {
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 600px) {
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .metrics-header h2 {
+    font-size: 28px;
+  }
+}
