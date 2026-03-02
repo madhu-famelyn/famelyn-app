@@ -3,7 +3,7 @@ import "./UpcomingEvents.css";
 import eventImage from "../../assets/Events/event-banner.jpg";
 import { FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
 
-const API_URL = "http://127.0.0.1:8000/contact/send-hi";
+const API_URL = "https://famelyn-backend.fly.dev/contact/send-hi";
 
 const UpcomingEvents = () => {
   const [modalOpen, setModalOpen] = useState(false);

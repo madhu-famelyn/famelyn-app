@@ -5,7 +5,7 @@ import book1 from "../../assets/Books/book-cover-1.jpg";
 import book2 from "../../assets/Books/book-cover-2.jpg";
 import book3 from "../../assets/Books/book-cover-3.jpg";
 
-const API_URL = "http://127.0.0.1:8000/contact/send-hi";
+const API_URL = "https://famelyn-backend.fly.dev/contact/send-hi";
 
 const BooksSection = () => {
   const [modalOpen, setModalOpen] = useState(false);
