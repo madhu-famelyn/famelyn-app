@@ -38,7 +38,7 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="nav">
             <Link to="/" className="nav-link">Home</Link>
-            <Link to="/course" className="nav-link">Courses</Link>
+            {/* <Link to="/course" className="nav-link">Courses</Link> */}
 
             <button
               className="nav-link testimonials-btn"
